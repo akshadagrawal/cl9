@@ -1,0 +1,5 @@
+export MPJ_HOME=/Users/akshad/mpj  
+export PATH=$MPJ_HOME/bin:$PATH
+
+javac -cp $MPJ_HOME/lib/mpj.jar MPIAverage.java
+$MPJ_HOME/bin/mpjrun.sh -np 4 MPIAverage
