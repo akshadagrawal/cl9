@@ -1,0 +1,28 @@
+Steps
+
+1. Make IDL file
+2. Compile with idlj -fall <name>
+3. in default package, make 3 classes, StartServer, StartClient, and ReaderObj
+4. Import <foldermadeabove>.*, org.omg.*, java.utils.*
+5. Extend objclass with the poa one
+6. Make a private ORB object.
+   Auto add the unimplemented methods in it.
+   Add function to get and set orb value
+7. Add req code for funtionality
+
+8. Goto server
+9. Initialize orb, reference to poahelper, activate poamanager
+10. Create servant and register with orb with self defined function
+11. Get object reference from servant, Get helper reference
+12. Make another objref from NameService, make Namingcontextext with helper
+13. Make named component path with name "ABC", rebind ncref  with path,href
+14. while true, orb.run
+
+15. Goto cient
+16. copy stuff for orb, objRef and ncRef
+17. copy Main obj line (step11), and replace with resolve_string
+18. use object like normal
+
+19. for executing, compile all java files - javac *.java
+20. orbd -ORBInitialPort 1050
+21. run server with args -ORBInitialPort 1050 -ORBInitialHost localhost
