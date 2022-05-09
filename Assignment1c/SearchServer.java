@@ -18,7 +18,7 @@ public class SearchServer
 			// Binds the remote object by the name
 			// geeksforgeeks
 			Naming.rebind("rmi://localhost:1900"+
-						"/geeksforgeeks",obj);
+						"/cl9",obj);
 		}
 		catch(Exception ae)
 		{

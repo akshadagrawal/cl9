@@ -10,7 +10,7 @@ public class ClientRequest
 			// lookup method to find reference of remote object
 			Search access =
 				(Search)Naming.lookup("rmi://localhost:1900"+
-									"/geeksforgeeks");
+									"/cl9");
 			answer = access.query(value);
 			System.out.println("Article on " + value +
 							" " + answer+" at cl9");

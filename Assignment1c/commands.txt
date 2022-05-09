@@ -1,6 +1,6 @@
 javac SearchQuery.javac
 rmic SearchQuery
-rmiregistry
+start rmiregistry
 
 javac SearchServer.javac
 java SearchServer
